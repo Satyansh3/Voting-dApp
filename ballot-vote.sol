@@ -28,8 +28,8 @@ contract Ballot{
     }
 
     struct Proposal{
-        bytes32 name;  //bytes32 uses less gas as compared to string
-        uint voteCount;
+        bytes32 name;  //name of each proposal
+        uint voteCount; // number of accumulated votes
     }
 
     Proposal[] public proposals;
